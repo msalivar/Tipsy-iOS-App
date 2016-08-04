@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		42562CD81D52EC410080B871 /* TipCalc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42562CD71D52EC410080B871 /* TipCalc.swift */; };
 		425FBEB01D51ABE6006E9C29 /* eachIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 425FBEAC1D51ABE6006E9C29 /* eachIcon.png */; };
 		425FBEB11D51ABE6006E9C29 /* Tip Calculator Screenshot.png in Resources */ = {isa = PBXBuildFile; fileRef = 425FBEAD1D51ABE6006E9C29 /* Tip Calculator Screenshot.png */; };
 		425FBEB21D51ABE6006E9C29 /* tipIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 425FBEAE1D51ABE6006E9C29 /* tipIcon.png */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		42562CD71D52EC410080B871 /* TipCalc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipCalc.swift; sourceTree = "<group>"; };
 		425FBEAC1D51ABE6006E9C29 /* eachIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eachIcon.png; sourceTree = "<group>"; };
 		425FBEAD1D51ABE6006E9C29 /* Tip Calculator Screenshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Tip Calculator Screenshot.png"; sourceTree = "<group>"; };
 		425FBEAE1D51ABE6006E9C29 /* tipIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tipIcon.png; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 		425FBEB41D51B7E1006E9C29 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				42562CD71D52EC410080B871 /* TipCalc.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -184,6 +187,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				42C742E81D506DC700DC751A /* ViewController.swift in Sources */,
+				42562CD81D52EC410080B871 /* TipCalc.swift in Sources */,
 				42C742E61D506DC700DC751A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

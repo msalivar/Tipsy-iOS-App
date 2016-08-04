@@ -42,7 +42,10 @@
                                 </constraints>
                                 <color key="textColor" red="0.60000002384185791" green="0.40000000596046448" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numbersAndPunctuation" keyboardAppearance="alert" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="decimalPad" keyboardAppearance="alert" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <action selector="billAmountChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="dy1-I1-AQe"/>
+                                </connections>
                             </textField>
                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="yF3-kd-9bX">
                                 <rect key="frame" x="22" y="173" width="360" height="116"/>
@@ -50,7 +53,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YW5-wA-Lhm">
                                         <rect key="frame" x="0.0" y="0.0" width="360" height="21"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="TIP 16%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ga-li-YYD">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="TIP 15%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ga-li-YYD">
                                                 <rect key="frame" x="0.0" y="0.0" width="76" height="21"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="76" id="3IY-fj-EXU"/>
@@ -60,7 +63,7 @@
                                                 <color key="textColor" red="0.2156862745" green="0.67843137249999996" blue="0.31764705879999999" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="aPZ-b8-jR6">
+                                            <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.14999999999999999" minValue="0.10000000000000001" maxValue="0.29999999999999999" translatesAutoresizingMaskIntoConstraints="NO" id="aPZ-b8-jR6">
                                                 <rect key="frame" x="74" y="0.0" width="288" height="22"/>
                                                 <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
@@ -70,6 +73,9 @@
                                                 </constraints>
                                                 <color key="minimumTrackTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                 <color key="maximumTrackTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <connections>
+                                                    <action selector="tipPercentChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="3KS-CO-9EW"/>
+                                                </connections>
                                             </slider>
                                         </subviews>
                                     </stackView>
@@ -234,6 +240,17 @@
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="400" height="600"/>
+                    <connections>
+                        <outlet property="billAmountTF" destination="FRA-dd-JeF" id="gAx-8e-83b"/>
+                        <outlet property="splitAmountLbl" destination="DCE-64-QTZ" id="0pa-Ll-pCw"/>
+                        <outlet property="splitNumSlider" destination="SFa-k0-ZG5" id="6qc-xW-P5L"/>
+                        <outlet property="tipAmountLbl" destination="DNU-bS-hLQ" id="WdV-1o-AhU"/>
+                        <outlet property="tipPercentLbl" destination="4ga-li-YYD" id="zzn-23-S4V"/>
+                        <outlet property="tipPercentSlider" destination="aPZ-b8-jR6" id="a04-ZE-fOm"/>
+                        <outlet property="tipsyTitleLbl" destination="dNn-pO-igU" id="FsA-L2-nAN"/>
+                        <outlet property="tipsyTitleView" destination="8vg-67-zTn" id="iNY-QU-mhR"/>
+                        <outlet property="totalAmountLbl" destination="M1t-Qe-Vs5" id="nzJ-Dc-hd7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
